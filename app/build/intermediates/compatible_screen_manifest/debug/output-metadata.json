@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "COMPATIBLE_SCREEN_MANIFEST",
+    "kind": "Directory"
+  },
+  "applicationId": "de.uni_osnabrueck.ikw.eegdroid",
+  "variantName": "debug",
+  "elements": []
+}

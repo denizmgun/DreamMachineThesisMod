@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: org.bytedeco.javacpp-presets:fftw:3.3.8-1.4.4:macosx-x86_64">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/fftw/3.3.8-1.4.4/f0aa6c3abca2337649dad531b8fbeba16007899e/fftw-3.3.8-1.4.4-macosx-x86_64.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/fftw/3.3.8-1.4.4/acb8bce1ad717494817afbbe7eb216f91e70f159/fftw-3.3.8-1.4.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/fftw/3.3.8-1.4.4/9f981e691aca57f718277443bfb64b0eb54b54f6/fftw-3.3.8-1.4.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
