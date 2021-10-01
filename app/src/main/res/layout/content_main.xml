@@ -181,30 +181,30 @@
                 </TableRow>
 
                 <TableRow
-                    android:id="@+id/tableRowDisplay"
+                    android:id="@+id/tableRowMITraining"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:gravity="center"
                     android:padding="5dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_video_library_black_24dp" />
+                            app:srcCompat="@drawable/ic_voicemail_black_24dp" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:text="@string/activity_name_play"
-                            android:textAlignment="center"
+                            android:text="MI Training"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -216,8 +216,51 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="Collect Motor Imagery data"
+                        android:textAlignment="viewStart"
+                        android:visibility="visible" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowMITest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="@string/activity_description_play"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_voicemail_black_24dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="MI Test"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="Test Motor Imagery Control"
                         android:textAlignment="viewStart"
                         android:visibility="visible" />
 
@@ -266,13 +309,58 @@
 
                 </TableRow>
 
+                <TableRow
+                    android:id="@+id/tableRowDisplay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity=""
+                    android:padding="5dp"
+                    android:visibility="invisible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_video_library_black_24dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:text="@string/activity_name_play"
+                            android:textAlignment="center"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/activity_description_play"
+                        android:textAlignment="viewStart"
+                        android:visibility="visible" />
+
+                </TableRow>
 
                 <TableRow
                     android:id="@+id/tableRowLearn"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="5dp">
+                    android:padding="5dp"
+                    android:visibility="invisible">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -315,7 +403,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="5dp">
+                    android:padding="5dp"
+                    android:visibility="invisible">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -358,7 +447,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="5dp">
+                    android:padding="5dp"
+                    android:visibility="invisible">
 
                     <LinearLayout
                         android:layout_width="match_parent"
