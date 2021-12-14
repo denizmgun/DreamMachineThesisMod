@@ -50,6 +50,12 @@
             android:name=".Record"
             android:screenOrientation="portrait"/>
         <activity
+            android:name=".MITraining"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MITest"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".Display"
             android:configChanges="orientation|screenSize" />
         <activity

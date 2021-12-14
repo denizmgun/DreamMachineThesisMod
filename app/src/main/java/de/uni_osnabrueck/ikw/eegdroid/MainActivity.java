@@ -79,7 +79,10 @@ public class MainActivity extends AppCompatActivity
         TextView textViewSaveDir = findViewById(R.id.textViewSaveDir);
         textViewSaveDir.setText("" + saveDir + "/");
 
-        ApplicationInfo applicationInfo = getApplicationInfo();
+        ApplicationInfo applicationInfo = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.DONUT) {
+            applicationInfo = getApplicationInfo();
+        }
         appName.setText(applicationInfo.loadLabel(getPackageManager()));
         appName.setTextColor(getResources().getColor(R.color.colorPrimary));
         appVersion.setText(BuildConfig.VERSION_NAME);
@@ -87,6 +90,8 @@ public class MainActivity extends AppCompatActivity
         Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(false);
 
         TableRow tableRowRecord = findViewById(R.id.tableRowRecord);
+        TableRow tableRowMITraining = findViewById(R.id.tableRowMITraining);
+        TableRow tableRowMITest = findViewById(R.id.tableRowMITest);
         TableRow tableRowDisplay = findViewById(R.id.tableRowDisplay);
         TableRow tableRowManage = findViewById(R.id.tableRowManage);
         TableRow tableRowLearn = findViewById(R.id.tableRowLearn);
@@ -95,6 +100,18 @@ public class MainActivity extends AppCompatActivity
         //Allows initialize activity when click in home
         tableRowRecord.setOnClickListener(v -> {
             Intent intent = new Intent(getBaseContext(), Record.class);
+            startActivity(intent);
+        });
+
+        //Allows initialize activity when click in home
+        tableRowMITest.setOnClickListener(v -> {
+            Intent intent = new Intent(getBaseContext(), MITest.class);
+            startActivity(intent);
+        });
+
+        //Allows initialize activity when click in home
+        tableRowMITraining.setOnClickListener(v -> {
+            Intent intent = new Intent(getBaseContext(), MITraining.class);
             startActivity(intent);
         });
 

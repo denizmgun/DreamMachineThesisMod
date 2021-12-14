@@ -398,5 +398,16 @@
         <item>15</item>
     </string-array>
 
+    <string name="training_introduction">
+        For the following 2 minutes you will see a sequence of crosses, arrows and circles.
+        When you see an arrow, please imagine extending your left or right arm in the
+        direction of the arrow. When you see a circle, don\'t do anything. The fixation crosses
+        in between just serve as short breaks.
+    </string>
+
+    <string name="training_end">
+        Thank you for participating.
+    </string>
+
 
 </resources>
